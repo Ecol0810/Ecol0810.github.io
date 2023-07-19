@@ -1,0 +1,1278 @@
+@charset "utf-8";
+
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+
+html {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'GmarketSans', "맑은 고딕", sans-serif, arial;
+    /* cursor: url(../img/cursor.cur), auto; */
+    color: #ffffff;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cf::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+}
+
+body::scrollbar {
+    width: 5px;
+}
+
+body::scrollbar-track {
+    background-color: black;
+}
+
+body::scrollbar-thumb {
+    background: white;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+#wrap {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    min-width: 1200px;
+    position: relative;
+}
+
+
+#header {
+    width: 1200px;
+    height: 70px;
+    position: fixed;
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%, 0);
+    z-index: 1000;
+}
+
+#menuWrap {
+    width: 1200px;
+    height: 50px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0.85;
+}
+
+#menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1200px;
+}
+
+#menu li {
+    float: left;
+    padding: 0 30px;
+    width: 140px;
+}
+
+
+#menu li a {
+    display: block;
+    padding: 2px 4px;
+    line-height: 42px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    opacity: .6;
+    transition: all .3s ease-in-out;
+}
+
+#menu li a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+#menu li.on a {
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+    opacity: 1;
+}
+
+#menu .mLogo {
+    padding-left: 0px;
+    padding-right: 250px;
+    margin-top: -5px;
+}
+
+#menu .mLogo a {
+    padding: 0 4px;
+    opacity: .6;
+}
+
+#menu .mLogo img{
+    width: 180px;
+}
+
+/* 추가 */
+/* #contents {} */
+
+#videoBg {
+    position: fixed;
+    z-index: -10;
+    background-color: black;
+    margin: 0 auto;
+}
+
+#videoBg source {
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    /* absolute로 수정 */
+    left: 0;
+    /* 추가 */
+    min-height: 100%;
+    /* 추가 */
+}
+
+#mainWrap {
+    width: 1300px;
+    margin: 0 auto;
+    height: 750px;
+    border-radius: 5px;
+    color: #ffffff;
+    position: relative;
+    top: 120px;
+}
+
+.typebox {
+    position: relative;
+    z-index: -1;
+    top: 100px;
+    left: 50px;
+}
+
+.type {
+    font-size: 60px;
+    opacity: 0.85;
+}
+
+.typed-cursor {
+    font-size: 60px;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+#profile {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+.scene {
+    position: relative;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 750px;
+    overflow: hidden;
+    width: 1300px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    display: flex;
+}
+
+.scene .about {
+    border-right: 1px solid #ffffff;
+    width: 400px;
+}
+
+.scene .about .photo {
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 70px;
+    position: relative;
+}
+
+.scene .about .photo1 {
+    background: url(../img/cat.jpg);
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.8s;
+    /* opacity: 0.5; */
+    position: absolute;
+}
+
+.scene .about .photo1:hover {
+    opacity: 0;
+}
+
+.scene .about .photo2 {
+    background: url(../img/cat2.jpg);
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+.scene .about .info {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.scene .about .info .infos {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.scene .skills {
+    width: 900px;
+}
+
+.scene .skills .footage {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    font-weight: 300;
+}
+
+.scene .skills .footage .foo {
+    line-height: 25px;
+}
+
+.scene .skills .footage .tage {
+    line-height: 25px;
+    text-align: right;
+    padding-left: 20px;
+}
+
+.scene .skills .graph {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.scene .skills .graph ul {
+    width: 70%;
+    padding: 20px 40px;
+}
+
+.scene .skills .graph li {
+    position: relative;
+}
+
+.scene .skills .graph li .aboutThis {
+    position: absolute;
+    top: 20px;
+    right: -200px;
+    width: 250px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    border-radius: 10px 30px 10px 30px;
+    transition: all .4s;
+    z-index: 100;
+    word-break: keep-all;
+}
+
+.scene .skills .graph li:hover .aboutThis {
+    opacity: 0.9;
+}
+
+.graph .tellY {
+    font-weight: 300;
+    text-align: right;
+}
+
+.graph .progress_tit {
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.graph .progress_cnt {
+    float: right;
+    font-weight: 300;
+    letter-spacing: -1px;
+    font-size: 15px;
+}
+
+.graph .progress {
+    width: 100%;
+    height: 20px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 13px 7px 13px 7px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    filter: blur(1px);
+}
+
+.graph .bar {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 100%;
+    border-radius: 13px 7px 13px 7px;
+    opacity: 0.6;
+    background-color: #fff;
+}
+
+.graph .Bcolor1 {
+    background: rgb(255, 69, 16);
+    background: linear-gradient(153deg, rgba(255, 69, 16, 1) 41%, rgba(255, 131, 20, 1) 100%);
+}
+
+.graph .Bcolor2 {
+    background: rgb(16, 120, 255);
+    background: linear-gradient(153deg, rgba(16, 120, 255, 1) 41%, rgba(20, 162, 255, 1) 100%);
+}
+
+.graph .Bcolor3 {
+    background: rgb(242, 240, 52);
+    background: linear-gradient(153deg, rgba(242, 240, 52, 1) 3%, rgba(75, 131, 168, 1) 100%);
+}
+
+.graph .Bcolor4 {
+    background: rgb(162, 158, 232);
+    background: linear-gradient(153deg, rgba(162, 158, 232, 1) 21%, rgba(121, 92, 194, 1) 100%);
+}
+
+.graph .Bcolor5 {
+    background: #2ec4ff;
+}
+
+.graph .Bcolor6 {
+    background: rgb(228, 99, 96);
+    background: linear-gradient(97deg, rgba(228, 99, 96, 1) 2%, rgba(161, 124, 255, 1) 27%, rgba(84, 204, 255, 1) 58%, rgba(21, 215, 95, 1) 100%);
+}
+
+.graph .Bcolor7 {
+    background: rgb(41, 45, 121);
+    background: linear-gradient(97deg, rgba(41, 45, 121, 1) 5%, rgba(76, 154, 236, 1) 71%);
+}
+
+.graph .Bcolor8 {
+    background: rgb(121, 73, 41);
+    background: linear-gradient(97deg, rgba(121, 73, 41, 1) 5%, rgba(231, 146, 19, 1) 71%);
+}
+
+.graph .Bcolor9 {
+    background: rgb(0,0,0);
+    background: linear-gradient(153deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 51%, rgba(0,0,0,1) 100%);
+}
+
+
+
+
+
+
+
+
+#web {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    /* 수정 */
+    /* 위치 추가 */
+
+}
+
+#webWrap {
+    width: 1300px;
+    height: 750px;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    position: relative;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.tabcon {
+    width: 100%;
+    height: 680px;
+    margin: 0 auto;
+}
+
+.tabcon ul {
+    width: 100%;
+    height: 680px;
+    float: left;
+    position: relative;
+}
+
+.tabcon ul li {
+    display: flex;
+    width: 100%;
+    height: 680px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.tabcon .con-show {
+    background: white;
+    box-shadow: 0px 0px 5px white;
+    width: 60%;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.tabcon .con-box {
+    background: white;
+    box-shadow: 0px 0px 5px white;
+    width: 60%;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.tabcon .con-box .con-show.com {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    box-shadow: none;
+}
+
+.tabcon .con-box .con-show.com .monitor {
+    z-index: 15;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tabcon .con-box .con-show.com .contents {
+    position: absolute;
+    overflow: hidden;
+    height: 405px;
+    top: -225px;
+    left: -95px;
+}
+
+.tabcon .con-box .con-show.com .contents a {
+    position: absolute;
+    z-index: 20;
+}
+
+.tabcon .con-box .con-show.phone {
+    position: absolute;
+    z-index: 20;
+    top: 330px;
+    left: 15px;
+    background: none;
+    box-shadow: none;
+    height: 250px;
+    width: 120px;
+}
+
+.tabcon .con-box .con-show.phone .monitor {
+    z-index: 25;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tabcon .con-box .con-show.phone .contents {
+    position: absolute;
+    background-color: #fff;
+    padding-top: 7px;
+    left: 10px;
+    top: 10px;
+    overflow: hidden;
+    height: 250px;
+    width: 120px;
+    border-radius: 15px;
+}
+
+.tabcon .con-box .con-show.phone .contents a {
+    position: absolute;
+    z-index: 300;
+}
+
+.tabcon .con-box .con-show.tab {
+    position: absolute;
+    z-index: 30;
+    top: 270px;
+    right: -210px;
+    background: none;
+    box-shadow: none;
+}
+
+.tabcon .con-box .con-show.tab .monitor {
+    z-index: 35;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tabcon .con-box .con-show.tab .contents {
+    position: absolute;
+    top: 35px;
+    left: 9px;
+    overflow: hidden;
+    height: 261px;
+    width: 201px;
+    background-color: #fff;
+}
+
+.tabcon .con-box .con-show.tab .contents a {
+    position: absolute;
+    z-index: 1000;
+}
+
+.tabcon .con-show .monitor {
+    position: relative;
+    z-index: 10;
+}
+
+.tabcon .con-show .contents {
+    width: 640px;
+    height: 407px;
+    top: 76px;
+    left: 56px;
+    /* opacity: 0.5; */
+    position: absolute;
+    overflow: hidden;
+}
+
+.tabcon .con-show .contents a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.tabcon .con-show .contents img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tabcon .con-tell {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.tabcon .con-tell hr {
+    width: 100%;
+    border: rgba(255, 255, 255, 0.4) 1px solid;
+    margin: 20px 0;
+}
+
+.tabcon .con-tell h3 {
+    text-indent: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.tabcon .con-tell .con-about {
+    padding: 0 10px;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.tabcon .con-tell .con-subs {
+    margin: 30px 15px;
+    display: flex;
+}
+
+.tabcon .con-tell .con-subs a {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 5px;
+    padding: 0 20px;
+    border-radius: 1px;
+    background-color: #ffffff77;
+    color: rgba(0, 0, 0, 0.849);
+    border-radius: 18px;
+    transition: all 0.5s;
+}
+
+.tabcon .con-tell .con-subs a:hover {
+    background-color: rgba(83, 83, 83, 0.644);
+    color: rgba(255, 255, 255, 0.849);
+    box-shadow: 3px 3px 0px #fff;
+}
+
+.tabcon .con-tell .con-compab {
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    gap: 10px;
+    border-top: rgba(255, 255, 255, 0.4) 3px solid;
+}
+
+.tabcon .con-tell .con-compab div {
+    filter: grayscale(100%);
+    transition: all 0.5s;
+    line-height: 50px;
+}
+
+.tabcon .con-tell .con-compab div:hover {
+    filter: grayscale(0%);
+}
+
+
+
+
+
+
+
+.tabBtn {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+}
+
+.tabBtn a {
+    display: block;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0.7;
+    filter: blur(0.6px);
+    transition: all 0.3s;
+}
+
+.tabBtn a:hover {
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.tabBtn a.active {
+    width: 170px;
+    font-weight: 500;
+    opacity: 1;
+    filter: blur(0);
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+
+#mobile01 {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+#mobile01Wrap {
+    width: 1300px;
+    height: 750px;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    position: relative;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+/* 프로젝트 슬라이드 */
+
+.PslideBox {
+    width: 1200px;
+    height: 600px;
+    margin: 50px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.Pslidelist {
+    width: 6000px;
+    height: 600px;
+    transition: all 0.5s;
+}
+
+.Pslide {
+    height: 600px;
+    width: 1200px;
+    float: left;
+    display: flex;
+}
+
+.Pimage {
+    width: 800px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    position: relative;
+}
+
+.Pimage .bunnylogo {
+    position: absolute;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Ptell {
+    width: 400px;
+    height: 600px;
+    box-sizing: border-box;
+    padding: 20px 0 30px 30px;
+    word-break: keep-all;
+}
+
+.Ptell .icoico {
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 1.3;
+}
+
+.Ptell .carroti {
+    height: 130px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Ptell h2 {
+    margin-bottom: 20px;
+}
+
+.Ptell p {
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.Ptell a {
+    background-color: #ffffff77;
+    color: rgba(0, 0, 0, 0.849);
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all .4s;
+}
+
+.Ptell a:hover {
+    background-color: rgba(83, 83, 83, 0.644);
+    color: rgba(255, 255, 255, 0.849);
+    box-shadow: 3px 3px 0px #fff;
+}
+
+.Pslide.ppnum1 .Pimage {
+    /* background: none; */
+    position: relative;
+}
+
+.Pslide.ppnum2 .Pimage {
+    background-image: url(../img/show.png);
+    background-position: center center;
+    background-size: contain;
+    height: 450px;
+    margin-top: 75px;
+}
+
+.Pslide.ppnum2 .Pimage a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.Pslide.ppnum4 .Pimage {
+    background-image: url(../img/figma.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #1B211B;
+}
+
+
+
+
+
+.PslideBtn {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid white;
+    height: 50px;
+    line-height: 50px;
+    padding-top: 10px;
+}
+
+.Nbutton {
+    background: rgba(255, 255, 255, 0.4);
+    width: 150px;
+    height: 40px;
+    font-size: 23px;
+    line-height: 45px;
+    border-radius: 25px;
+    margin: 0 5px;
+    font-weight: 300;
+    transition: all .3s;
+}
+
+.Nbutton:focus {
+    transition: all;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    width: 170px;
+    font-weight: bold;
+    outline: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#thankyou {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    /* 수정 */
+    /* 위치 추가 */
+}
+
+#thankyou01Wrap {
+    width: 1300px;
+    height: 750px;
+    border-radius: 5px;
+    position: relative;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#thankyou01Wrap .float{
+    animation: float 1.5s infinite ease;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+#thankyou01Wrap .wrapper{
+    position: relative;
+    top: 130px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    /* align-items: center; */
+    flex-flow: wrap;
+    border: #00000050 1px solid;
+    width: 650px;
+    height: 320px;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #000;
+    text-shadow: 0 3px 5px rgba(#000, 0.25);
+    background-image: url(../img/wave.png);
+    background-repeat: repeat-x;
+    /* background-position: 300% 100%; */
+    background-position: 0 -340%;
+    transition: 1.5s ease-in-out;
+    z-index: 100;
+    overflow: hidden;
+}
+#thankyou01Wrap .wrapper:hover{
+    background-position: 150% 100%;
+    border: #ffffff38 1px solid;
+}
+
+#thankyou01Wrap .float2{
+    position: absolute;
+    z-index: 1;
+    font-size: 20px;
+    margin-top: 150px;
+    animation: float2 2.5s infinite ease;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+    transition: all .5s;
+    opacity: 1;
+}
+#thankyou01Wrap .float2::after{
+    display: block;
+    content: 'hover here!';
+    opacity: inherit;
+    position: absolute;
+    height: 100px;
+    font-size: .7em;
+    font-weight: lighter;
+    text-align: center;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#thankyou01Wrap .wrapper:hover .float2{
+    opacity: 0;
+}
+#thankyou01Wrap .wrapper .contactinfo{
+    position: relative;
+    top: 400px;
+    width: 650px;
+    text-align: center;
+    display: flex;
+    transition: all 1s;
+}
+#thankyou01Wrap .wrapper:hover .contactinfo{
+    top: 0;
+}
+#thankyou01Wrap .wrapper .contactinfo .contactsend{
+    width: 400px;
+}
+#thankyou01Wrap .wrapper .contactinfo .contactsend h3{
+    margin-top: 60px;
+    font-size: 1.7em;
+}
+#thankyou01Wrap .wrapper .contactinfo .contactkakao{
+    width: 250px;
+    padding-top: 20px;
+}
+#thankyou01Wrap .wrapper .contactinfo *{
+    display: block;
+}
+#thankyou01Wrap .wrapper .contactinfo a{
+    font-weight: lighter;
+}
+#thankyou01Wrap .wrapper .contactinfo span{
+    display: block;
+    font-size: 1.3em;
+    margin: 10px;
+}
+#thankyou01Wrap .wrapper .contactinfo img{
+    margin-top: 40px;
+    margin-right: 30px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 5px;
+}
+#thankyou01Wrap .wrapper .contactinfo span.ifcontact{
+    font-weight: lighter;
+    font-size: .8em;
+    margin-top: 30px;
+}
+
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes float2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+#profile>*,
+#web>*,
+#mobile01>*,
+#thankyou>* {
+    position: absolute;
+}
+
+#floatdiv {
+    /* 가운데 배치 고정 */
+    position: absolute;
+    /*  수정 fixed*/
+    top: 350px;
+    /* 수정 */
+    margin-top: 40px;
+    margin-left: -30px;
+    /* 수정 */
+    z-index: 9999;
+}
+
+#floatdiv ul {
+    list-style: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#floatdiv ul li {
+    align-content: center;
+}
+
+#floatdiv ul li span {
+    margin: 0 0 5px 0;
+}
+
+#floatdiv ul li #btn01 {
+    display: block;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    opacity: .3;
+    transition: all .3s ease-in-out;
+}
+
+#floatdiv ul li #btn02 {
+    display: block;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    opacity: .3;
+    transition: all .3s ease-in-out;
+}
+
+#floatdiv ul li #btn03 {
+    display: block;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    opacity: .3;
+    transition: all .3s ease-in-out;
+}
+
+#floatdiv ul li #btn04 {
+    display: block;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    opacity: .3;
+    transition: all .3s ease-in-out;
+}
+
+#floatdiv ul li #btn05 {
+    display: block;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    opacity: .3;
+    transition: all .3s ease-in-out;
+}
+
+#floatdiv ul li:hover #btn01 {
+    height: 40px;
+    opacity: 0.5;
+}
+
+#floatdiv ul li:hover #btn02 {
+    height: 40px;
+    opacity: 0.5;
+}
+
+#floatdiv ul li:hover #btn03 {
+    height: 40px;
+    opacity: 0.5;
+}
+
+#floatdiv ul li:hover #btn04 {
+    height: 40px;
+    opacity: 0.5;
+}
+
+#floatdiv ul li:hover #btn05 {
+    height: 40px;
+    opacity: 0.5;
+}
+
+
+#floatdiv ul li.active #btn01 {
+    height: 40px;
+    opacity: 0.7;
+}
+
+#floatdiv ul li.active #btn02 {
+    height: 40px;
+    opacity: 0.7;
+}
+
+#floatdiv ul li.active #btn03 {
+    height: 40px;
+    opacity: 0.7;
+}
+
+#floatdiv ul li.active #btn04 {
+    height: 40px;
+    opacity: 0.7;
+}
+
+#floatdiv ul li.active #btn05 {
+    height: 40px;
+    opacity: 0.7;
+}
+
+
+#floatdiv ul li span p {
+    color: #fff;
+    height: inherit;
+    margin-left: 50px;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+#floatdiv ul li:hover #btn01 p {
+    margin-left: -60px;
+}
+
+#floatdiv ul li:hover #btn02 p {
+    margin-left: -90px;
+}
+
+#floatdiv ul li:hover #btn03 p {
+    margin-left: -55px;
+}
+
+#floatdiv ul li:hover #btn04 p {
+    margin-left: -100px;
+}
+
+#floatdiv ul li:hover #btn05 p {
+    margin-left: -125px;
+}
+
+#floatdiv ul li.active #btn01 p {
+    margin-left: -60px;
+}
+
+#floatdiv ul li.active #btn02 p {
+    margin-left: -90px;
+}
+
+#floatdiv ul li.active #btn03 p {
+    margin-left: -55px;
+}
+
+#floatdiv ul li.active #btn04 p {
+    margin-left: -65px;
+}
+
+#floatdiv ul li.active #btn05 p {
+    margin-left: -125px;
+}
+
+
+
+
+
+
+
+.cursor {
+    height: 15px;
+    width: 32px;
+    background-image: url(../img/ruj.svg);
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 90%);
+}
